@@ -20,7 +20,7 @@
         </style>
 </head>
 <body>
-        <h1>CORES (index.html)</h1>
-        <p>teach-in-cores | jumbocode project</p>
+        <h1>Hello World Example</h1>
+        <p>This is a very basic "Hello World" example made up in HTML and CSS. See if you can change the size of the header text above.</p>
 </body>
 </html>
