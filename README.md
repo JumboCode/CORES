@@ -27,3 +27,4 @@ Week 1 Actionables:
         team 2: course materials
         create a more navigable/categorized page for the course materials
 
+colin murphy

@@ -12,6 +12,10 @@ curl https://cli-assets.heroku.com/install.sh | sh
 
 npm install -g heroku
 
+git clone (link to this repository)
+
+cd in to repository
+
 git remote add heroku git@heroku.com:teach-in-cores.git
 
 heroku keys:add ~/.ssh/id_rsa.pub

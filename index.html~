@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
         <title>HTML and CSS "Hello World"</title>
@@ -12,15 +11,26 @@
                         font-size: 30px;
                         font-family: Menlo, Monaco, fixed-width;
                 }
+                h2{
+                        color: #C24306;
+                        font-size: 20px;
+                        font-family: Menlo, Monaco, fixed-width;
+                }
                 
-                p {
+                p, ul, li {
                         color: white;
                         font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
                 }
         </style>
 </head>
 <body>
-        <h1>Hello World Example</h1>
-        <p>This is a very basic "Hello World" example made up in HTML and CSS. See if you can change the size of the header text above.</p>
+        <h1>CORES (index.html)</h1>
+        <h2>teach-in-cores | jumbocode project</h2>
+        <p>Hi all!</p>
+        <p>Here are our first plans for the first week:
+        <li>redesign and build homepage</li>
+                <ul>decide on information architecture</ul>
+                <ul>here's an <a href = "facebook.com">example</a></ul>
+        </p>
 </body>
 </html>
