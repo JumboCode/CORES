@@ -12,7 +12,7 @@
 
 
 <?php include("includes/header.html");?>
-
+<?php include("includes/teaching-resources.html");?>
 
 
 </body>
