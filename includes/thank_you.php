@@ -10,8 +10,8 @@
 <body>
 
 
-<?php include("includes/header.html");?>
-<?php include("includes/resources.html");?>
+<?php include("header.html");?>
+<?php include("thank_you.html");?>
 
 
 </body>

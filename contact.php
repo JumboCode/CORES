@@ -5,13 +5,13 @@
 <title>Home page – My Website</title>
 <meta http-equiv="description" content="page description" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<?php include("includes/header.html");?>
 </head>
 
 <body>
 
 
-<?php include("includes/header.html");?>
-<?php include("includes/resources.html");?>
+<?php include("includes/contact.html");?>
 
 
 </body>
