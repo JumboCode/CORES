@@ -38,7 +38,7 @@
         <div class="col-md-2 col-xl-2">
         </div>
         <div class="col-md-8 col-xl-8">
-            <form id="contact-form" name="contact-form" action="includes/mail.php" method="POST">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
                 <!--Grid row-->
                 <div class="row">
@@ -90,12 +90,12 @@
                 </div>
                 <!--Grid row-->
 
-        <div class="col-md-4 col-xl-4">
+        <div class="col-md-12">
         </div>
             </form>
 
             <div class="center-on-small-only">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit(mail(name ,subject ,message));">Send</a>
             </div>
             <div class="status"></div>
         </div>
@@ -104,4 +104,6 @@
     </div>
 
 </section>
+</html>
+
 <!--Section: Contact v.2-->
