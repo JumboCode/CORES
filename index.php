@@ -9,8 +9,8 @@
 <body>
 
 
-<?php include("includes/header.html");?>
-<?php include("includes/index.html");?>
+<?php include("html/header.html");?>
+<?php include("html/index.html");?>
 
 
 </body>
