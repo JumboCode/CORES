@@ -11,7 +11,7 @@
 
 
 <?php include("includes/header.html");?>
-<?php include("includes/announcements.html");?>
+<?php include("includes/calendar.html");?>
 
 
 </body>
