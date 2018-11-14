@@ -1,0 +1,15 @@
+.page-header {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+body {
+	background-color: #24569d;
+}
+a {
+	color: #fff;
+}
+
+a:hover {
+   color: #fff;
+}
