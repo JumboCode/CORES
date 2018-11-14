@@ -10,8 +10,8 @@
 <body>
 
 
-<?php include("includes/header.html");?>
-<?php include("includes/announcements.html");?>
+<?php include("html/header.html");?>
+<?php include("html/announcements.html");?>
 
 
 </body>
