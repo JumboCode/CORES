@@ -4,12 +4,11 @@
 <head>
 <meta http-equiv="description" content="page description" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<?php include("includes/header.html");?>
 </head>
 
 <body>
 
-
+<?php include("../html/header.html");?>
 <?php include("../html/contact.html");?>
 
 
