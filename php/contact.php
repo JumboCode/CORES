@@ -10,7 +10,7 @@
 <body>
 
 
-<?php include("includes/contact.html");?>
+<?php include("html/contact.html");?>
 
 
 </body>
