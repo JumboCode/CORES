@@ -9,3 +9,31 @@ a{
 a:hover {
 
 }
+
+
+.navbar {
+    background-color: #1D2746;
+}
+.navbar-nav a{
+    color: white;
+    padding-top: 8px;
+
+}
+
+.navbar-nav {
+
+   padding-top: 8px;
+   text-align: justify;
+   font-size: 15px;
+   min-width: 10%;
+
+}
+.navbar-nav:after {
+    content: '';
+    display: inline-block;
+/*    width: 100%;*/
+}
+.navbar-nav li {
+    display: inline-block;
+    float:none;
+}
