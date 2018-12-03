@@ -25,4 +25,4 @@ $pp->getReCaptcha()->initSecretKey('6LdnYX4UAAAAAKlJRBAycI7GIzClTddk7XVUA4z9');
 
 $pp->sendEmailTo('cpmurphy97@gmail.com'); // ← Your email here
 
-echo $pp->process($_POST);
+echo $pp->process($_POST)
