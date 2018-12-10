@@ -9,7 +9,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="form.css" >
         <script src="form.js"></script>
-    </head>
+	<script src='https://www.google.com/recaptcha/api.js?render=6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx'></script>
+<script>
+grecaptcha.ready(function() {
+grecaptcha.execute('6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx', {action: 'action_name'})
+.then(function(token) {
+// Verify the token on the server.
+});
+});
+</script>   
+ </head>
     <body >
         <div class="container">
             <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -24,8 +33,7 @@
                     <input id="email" type="email" name="Email" required maxlength="50">
                     <label for="message">Message:</label>
                     <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
-                    <div class="g-recaptcha" data-sitekey="6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx
-"></div>
+                    <div class="g-recaptcha"6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx"></div>
                     <button class="button-primary" type="submit" >Post</button>
                 </form>
                 <div id="success_message" style="display:none">
