@@ -21,7 +21,7 @@
 
 	figure {
 	    display: inline-block;
-	    margin: 20px; /* adjust as needed */
+	    margin: 1%; /* adjust as needed */
 	}
 
 	figure img {
@@ -35,26 +35,59 @@
 
 	}
 	
-	.title {
-		background-color: #4286F4;
+	h1 {
+		font-weight: bold;
 	}
 
+	h3 {
+		color: #d8e5ef;
+	}
+
+	.title {
+		background-color: #1D2746;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		padding-left: 2%;
+		padding-right: 2%;
+
+	}
+
+	.Page {
+		margin-top: 3%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	body {
+		font-family: Avenir;
+		background-color: #d8e5ef;
+	}
+
+	.map {
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.pic {
+		margin: 2%;
+		text-align: center;
+	}
 
 	</style>
 	
 
 </head>
 	<body>
-
+		<div class = "Page">
 		<h1>CORES Center</h1>
 
-		<p> Led by Salvadorians with a strong commitment to the leadership, development, and empowerment of their community, the CORES (Committee on Refugees from El Salvador) Center is located at 343 Medford Street, Somerville, MA 02145. The center is open Monday - Friday 9am - 5pm and Saturday 10am - 3pm. </p>
+		<p> Led by Salvadorans with a strong commitment to the leadership, development, and empowerment of their community, the CORES (Committee on Refugees from El Salvador) Center is located at 343 Medford Street, Somerville, MA 02145. The center is open Monday - Friday 9am - 5pm and Saturday 10am - 3pm. </p>
 
 		<!-- teachers and images -->
 		<div class = "pic">
 				
-	        <p><img src="spongebob.jpg" width="100" height="48" border="5"/></p>
-	        <p><img src="spongebob.jpg" width="100" height="48" border="5" /></p>
+	        <img id="one" src="spongebob.jpg" width="100" height="48" border="5"/>
+	        <img id="two" src="spongebob.jpg" width="100" height="48" border="5" />
 
 		</div>
 
@@ -99,6 +132,6 @@
         <div class = "map">
         	<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa_-6wNJw44kRLtgbsuv2qms&key=AIzaSyC-OBP1kgASiRi6zQcJKUs6iQKpZF1jjGo" allowfullscreen></iframe>
         </div>
-
+    </div>
 	</body>
 </html>
