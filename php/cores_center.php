@@ -11,7 +11,7 @@
 
 
 <?php include("../html/header.html");?>
-<?php include("../html/announcements.html");?>
+<?php include("../html/cores_center.html");?>
 
 
 </body>
