@@ -9,6 +9,7 @@
 
 
 <!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="../css/stylesheet.css">
@@ -16,6 +17,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>CORES</title>
+<style>
+.nav-item {
+	width=20%;
+}
+
+.nav {
+	width=80%;
+}
+</style>
 </head>
 
 
@@ -25,18 +35,18 @@
   <div class="container-fluid text-center">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class = "navbar-header">
-    <div class="navbar-brand">
-      <a href="../index.php"><img src = "../CORESlogo.svg" alt ="icon"></a>
-  </div>
-  </div>
+		<div class="navbar-brand">
+			<a href="../index.php"><img src = "../CORESlogo.svg" alt ="icon"></a>
+		</div>
+    </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-      <ul class="nav navbar-nav">
-        <li class=><a href="../php/resources.php">Curriculum</a></li>
-        <li id = resources><a href="../php/teaching-resources.php">Teaching Resources</a></li>
-        <li><a href="../php/cores_center.php">CORES Center</a></li>
-        <li><a href="../php/contact.php">Contact</a></li>
+      <ul class="nav navbar-nav justify-content-center col-xs-6">
+        <li class="nav-item"><a href="../php/resources.php">Curriculum</a></li>
+        <li class="nav-item"><a href="../php/teaching-resources.php">Teaching Resources</a></li>
+        <li class="nav-item"><a href="../php/cores_center.php">CORES Center</a></li>
+        <li class="nav-item"><a href="../php/contact.php">Contact</a></li>
       </ul>
-      </div>
+  </div>
 </nav>
 
 </body>
