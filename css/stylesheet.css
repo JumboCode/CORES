@@ -3,13 +3,17 @@
 	font-weight: bold;
 }
 
-a{
+body {
+  background-color: #24569d;
+}
+
+a {
+  color: #fff;
 }
 
 a:hover {
-
+   color: #fff;
 }
-
 
 .navbar {
     background-color: #1D2746;
