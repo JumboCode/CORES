@@ -3,6 +3,8 @@
 
 <!-- Optional theme -->
 
+<!-- Card Columns-->
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
@@ -29,29 +31,61 @@ body {
 	background-color: #d8e5ef;
 }
 
+.mt-2 {
+	margin-top: 2% !important;
+}
+
+.mb-5 {
+	margin-bottom: 5% !important;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.widgets {
+	display: flex;
+    justify-content: space-around;
+}
 
 </style>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
-				<center><h2>WHO ARE WE?</h2></center>
-				<p>Tufts Teach-in-Cores is a group of students from Tufts University teaching ESL 
+		<div class="row display-flex widgets">
+			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3"> 
+				<div class="card">
+					<center><h2>WHO ARE WE?</h2></center>
+					<p>Tufts Teach-in-Cores is a group of students from Tufts University teaching ESL 
 				through the Comittee on Refugees from El Salvador in Somerville, Massachussetts.</p>
+				</div>
 			</div>
-			<div class="col-sm-6">
-				<center><h2>EVENT OF THE MONTH</h2></center>
-				<p>Join the Teach-in-CORES teachers and students when we watch the 2017 Disney film, Coco.</p>
+			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3">
+				<div class="card">
+					<center><h2>EVENT OF THE MONTH</h2></center>
+					<p>Join the Teach-in-CORES teachers and students when we watch the 2017 Disney film, Coco.</p>
+				</div>
 			</div>
 		</div>	
-		<div class="row">
-			<div class="col-sm-6">
-				<center><p>PICS HERE</p></center>
+		<div class="row display-flex widgets">
+			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3 mb-5"> 
+				<div class="card">
+					<center><h2>WHO ARE WE?</h2></center>
+					<p>Tufts Teach-in-Cores is a group of students from Tufts University teaching ESL 
+				through the Comittee on Refugees from El Salvador in Somerville, Massachussetts.</p>
+				</div>
 			</div>
-			<div class="col-sm-6">
-				<center><p>PICS HERE</p></center>
+			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3 mb-5">
+				<div class="card">
+					<center><h2>EVENT OF THE MONTH</h2></center>
+					<p>Join the Teach-in-CORES teachers and students when we watch the 2017 Disney film, Coco.</p>
+				</div>
 			</div>
-		</div>
+		</div>	
 	</div>
 
 	<div class="container">
