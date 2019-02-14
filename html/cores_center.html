@@ -82,7 +82,33 @@
 		margin-top: 0em;
 	}
 
-	</style>
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.widgets {
+	display: flex;
+    justify-content: space-around;
+}
+
+.bg-primary {
+	background-color: #d8e5ef;
+}
+
+.mb-5 {
+	margin-bottom: 5% !important;
+}
+
+.mt-2 {
+	margin-top: 2% !important;
+}
+
+</style>
 	
 
 </head>
@@ -93,16 +119,19 @@
 		<h2>CORES Center</h2>
 
 		<p> Led by Salvadorans with a strong commitment to the leadership, development, and empowerment of their community, the CORES (Committee on Refugees from El Salvador) Center is located at 343 Medford Street, Somerville, MA 02145. The center is open Monday - Friday 9am - 5pm and Saturday 10am - 3pm. </p>
-
-		<!-- teachers and images -->
-		<div class = "pic">
-				
-	        <img id="one" src="spongebob.jpg" width="100" height="48" border="5"/>
-	        <img id="two" src="spongebob.jpg" width="100" height="48" border="5" />
-
+		<div class="container">
+		<div class="row display-flex widgets mb-5">
+			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3">
+				<img class="img-responsive card-img-top img-marg" src="spongebob.jpg" alt="Card image">
+			</div>
+			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3">
+				<img class="img-responsive card-img-top img-marg" src="spongebob.jpg" alt="Card image">
+			</div>
+		</div>
 		</div>
 
-        <div class = "title"> 
+		<div class="row display-flex widgets">
+        <div class = "title col-sm-12"> 
         	<h3> CORES Teachers </h3>
         	<div class = "teachers">
         		<figure>
@@ -135,9 +164,10 @@
 				</figure>
         		<figure>
   					<img src="spongebob.jpg" width="100" height="48">
-  					<figcaption>Hayley</figcaption>
+  					<figcaption>The Jungle</figcaption>
 				</figure>
         	</div>
+       	</div>
        	</div>
         
         <div class = "map">
