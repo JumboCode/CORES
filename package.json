@@ -1,0 +1,20 @@
+{
+  "name": "CORES",
+  "version": "1.0.0",
+  "description": "JumboCode 2018-2019 project for Committee on Refugees from El Salvador",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JumboCode/CORES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JumboCode/CORES/issues"
+  },
+  "homepage": "https://github.com/JumboCode/CORES#readme"
+}
