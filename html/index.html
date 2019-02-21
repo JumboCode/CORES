@@ -2,6 +2,13 @@
 <!DOCTYPE html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- CHECK OUT FOR PANEL STUFF: https://codepen.io/nhembram/pen/XKEJJp?editors=1010 -->
+
 
 <!-- Optional theme -->
 
@@ -31,12 +38,34 @@ body {
 	background-color: #d8e5ef;
 }
 
+.picBack {
+	background-color: #d8e5ef;
+}
+
+figure {
+	display: inline-block;
+	margin: 1%; /* adjust as needed */
+}
+
+figure img {
+	border-radius: 50%;
+	vertical-align: top;
+}
+
+figure figcaption {
+text-align: center;
+color: white;
+
+}
+
+
+
 .mt-2 {
 	margin-top: 2% !important;
 }
 
-.mb-5 {
-	margin-bottom: 5% !important;
+.mt-5 {
+	margin-top: 5% !important;
 }
 
 .row.display-flex {
@@ -53,40 +82,40 @@ body {
     justify-content: space-around;
 }
 
+.col-sm-5 {
+	margin-left:2%;
+	margin-right:2%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 </style>
 <body>
 	<div class="container">
 		<div class="row display-flex widgets">
-			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3"> 
+			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3"> 
 				<div class="card">
-					<center><h2>WHO ARE WE?</h2></center>
+					<center><h2><b>WHO ARE WE?</b></h2></center>
 					<p>Tufts Teach-in-Cores is a group of students from Tufts University teaching ESL 
 				through the Comittee on Refugees from El Salvador in Somerville, Massachussetts.</p>
 				</div>
 			</div>
-			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3">
+			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3">
 				<div class="card">
-					<center><h2>EVENT OF THE MONTH</h2></center>
+					<center><h2><b>EVENT OF THE MONTH</b></h2></center>
 					<p>Join the Teach-in-CORES teachers and students when we watch the 2017 Disney film, Coco.</p>
 				</div>
 			</div>
 		</div>	
 		<div class="row display-flex widgets">
-			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3 mb-5"> 
-				<div class="card">
-					<center><h2>WHO ARE WE?</h2></center>
-					<p>Tufts Teach-in-Cores is a group of students from Tufts University teaching ESL 
-				through the Comittee on Refugees from El Salvador in Somerville, Massachussetts.</p>
-				</div>
+			<div class="col-sm-5 col-xs-12 mt-2 picBack text-white text-center p-3"> 
+				<img class="img-responsive card-img-top img-marg" src="spongebob.jpg" alt="Card image">
 			</div>
-			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3 mb-5">
-				<div class="card">
-					<center><h2>EVENT OF THE MONTH</h2></center>
-					<p>Join the Teach-in-CORES teachers and students when we watch the 2017 Disney film, Coco.</p>
-				</div>
+			<div class="col-sm-5 col-xs-12 mt-2 picBack text-white text-center p-3">
+				<img class="img-responsive card-img-top img-marg" src="spongebob.jpg" alt="Card image">
 			</div>
 		</div>	
 	</div>
 
-	<center><iframe src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=tufts.cores%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></center>
+	<center class="mt-5"><iframe src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=tufts.cores%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></center>
 </body>
