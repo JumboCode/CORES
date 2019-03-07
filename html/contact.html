@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>PHP Contact Form With Validation And Recaptcha - reusable form</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <link rel="stylesheet" href="form.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="form.css">
         <script src="form.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js?render=6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx'></script>
+
 <script>
 grecaptcha.ready(function() {
 grecaptcha.execute('6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx', {action: 'action_name'})
@@ -18,15 +19,62 @@ grecaptcha.execute('6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx', {action: 'action_
 });
 });
 </script>   
+
+    <!-- jQuery library -->
+<!--     <meta charset="utf-8"/>
+    <script 
+        type="text/javascript" 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="script.js"></script> -->
+
+
+    <!-- Bootstrap -->
+<!--     <script 
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">  
+    </script>
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous"> -->
+
+<!-- CHECK OUT FOR PANEL STUFF: https://codepen.io/nhembram/pen/XKEJJp?editors=1010 -->
+
+    <!-- header css and formatting -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
 
-     <style>
-        body {
-        font-family: Avenir;
-        background-color: #d8e5ef;
-        }
-    </style>
-    <body >
+<style>
+    body {
+    font-family: Avenir;
+    background-color: #d8e5ef;
+    }
+</style>
+    
+<body>
+<!-- header html -->
+<header>
+    <nav class ="navbar">
+      <div class="container-fluid text-center">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class = "navbar-header">
+            <div class="navbar-brand">
+                <a href="index.html"><img src = "../CORESlogo.svg" alt ="icon"></a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav mr-auto justify-content-center col-xs-6">
+            <li class="nav-item"><a href="resources.html">Curriculum</a></li>
+            <li class="nav-item"><a href="teaching-resources.html">Teaching Resources</a></li>
+            <li class="nav-item"><a href="cores_center.html">CORES Center</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
         <div class="container">
             <script src='https://www.google.com/recaptcha/api.js'></script>
             <div class="form-container">
