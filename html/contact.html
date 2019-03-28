@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>PHP Contact Form With Validation And Recaptcha - reusable form</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="form.css">
-        <script src="form.js"></script>
+	<title>Contact</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" 
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+	crossorigin="anonymous">
+	<script src="form.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js?render=6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx'></script>
 
 <script>
@@ -47,8 +51,8 @@ grecaptcha.execute('6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx', {action: 'action_
 
 <style>
     body {
-    font-family: Avenir;
-    background-color: #d8e5ef;
+		font-family: Avenir;
+		background-color: #d8e5ef;
     }
 </style>
     
@@ -82,10 +86,10 @@ grecaptcha.execute('6LdnYX4UAAAAAOAYoPc1MpLOVDsXxdlh7_EZtTvx', {action: 'action_
                     Contact Us
                 </h1>
                 <form method="post" id="reused_form" >
-                    <label for="name">Your Name:</label>
-                    <input id="name" type="text" name="Name" required maxlength="50">
-                    <label for="email">Email Address:</label>
-                    <input id="email" type="email" name="Email" required maxlength="50">
+						<label for="name">Your Name:</label>
+						<input id="name" type="text" name="Name" required maxlength="50">
+							<label for="email">Email Address:</label>
+							<input id="email" type="email" name="Email" required maxlength="50">
                     <label for="message">Message:</label>
                     <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
                     <div class="g-recaptcha" data-sitekey="6LcKGY4UAAAAAKBna7Z9mtRstLBzIG-6n9DG5YTC"></div>
