@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JumboCode/CORES/issues"
   },
-  "homepage": "https://github.com/JumboCode/CORES#readme"
+  "homepage": "https://github.com/JumboCode/CORES#readme",
+  "dependencies": {
+    "htmlhint": "^0.10.1"
+  }
 }
