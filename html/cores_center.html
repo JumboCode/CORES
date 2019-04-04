@@ -17,7 +17,9 @@
 
 
 	<!-- Bootstrap -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script 
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">	
+	</script>
 	<link rel="stylesheet" 
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
@@ -34,6 +36,37 @@
 </head>
 	<!-- styling -->
 	<style type="text/css">
+
+	.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  
+  .card {
+    display: inline-block;
+  }
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  
+  .card {
+    flex: 0 0 auto;
+    margin-right: 3px;
+  }
+}
+
+.scrolling-wrapper, .scrolling-wrapper-flexbox {
+  height: 160px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 	figure {
 	    display: inline-block;
@@ -164,10 +197,9 @@
 	        <li class="nav-item"><a href="resources.html">Curriculum</a></li>
 	        <li class="nav-item"><a href="teaching-resources.html">Teaching Resources</a></li>
 	        <li class="nav-item"><a href="cores_center.html">CORES Center</a></li>
-	        <li class="nav-item"><a href="contact.html">Contact</a></li>
+	        <li class="nav-item"><a href="../contact/formpage.html">Contact</a></li>
 	      </ul>
 		</div>
-	  </div>
 	</nav>
 </header>
 
@@ -194,38 +226,118 @@
         <div class = "title col-sm-12"> 
         	<h3> CORES Teachers </h3>
         	<div class = "teachers">
-        		<figure>
-  					<img src="../pics/AlfredoGutierrez.png" width="100" height="48">
-  					<figcaption>Allen</figcaption>
+        		  <div class="scrolling-wrapper">
+
+        		 <figure>
+  					<img src="../pics/AJ Pandina.png" width="100" height="100">
+  					<figcaption>AJ</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/AkashMishra.png" width="100" height="100">
+  					<figcaption>Akash</figcaption>
 				</figure>
         		<figure>
-  					<img src="../pics/AkashMishra.png" width="100" height="48">
+  					<img src="../pics/AlfredoGutierrez.png" width="100" height="100">
+  					<figcaption>Alfredo</figcaption>
+				</figure>
+        	<!-- 	<figure>
+  					<img src="../pics/PamelaToscano.png" width="100" height="100">
+  					<figcaption>Pamela</figcaption>
+				</figure> -->
+        		<figure>
+  					<img src="../pics/AndreaChavez.png" width="100" height="100">
+  					<figcaption>Andrea</figcaption>
+				</figure>
+        		<figure>
+  					<img src="../pics/BeccaLeviss.png" width="100" height="100">
+  					<figcaption>Becca</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/BrittanyLin.png" width="100" height="100">
   					<figcaption>Brittany</figcaption>
 				</figure>
-        		<figure>
-  					<img src="../pics/PamelaToscano.png" width="100" height="48">
-  					<figcaption>Carlos</figcaption>
+				</figure>
+					<figure>
+  					<img src="../pics/CarolinaSoler.png" width="100" height="100">
+  					<figcaption>Carolina</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/CarolineGoswami.png" width="100" height="100">
+  					<figcaption>Caroline</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/ChristinaFleury.png" width="100" height="100">
+  					<figcaption>Christina</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/DaniellaFaura.png" width="100" height="100">
+  					<figcaption>Daniella</figcaption>
 				</figure>
         		<figure>
-  					<img src="../pics/AndreaChavez.png" width="100" height="48">
-  					<figcaption>Donna</figcaption>
+  					<img src="../pics/EmilyMitrione.png" width="100" height="100">
+  					<figcaption>Emily</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/EricaDeBarge.png" width="100" height="100">
+  					<figcaption>Erica</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/Jacob Cantor.png" width="100" height="100">
+  					<figcaption>Jacob</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/Jake Gilbert.png" width="100" height="100">
+  					<figcaption>Jake</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/Jared Sawyer.png" width="100" height="100">
+  					<figcaption>Jared</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/Jeremy Silverman.png" width="100" height="100">
+  					<figcaption>Jeremy</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/Judy Chen.png" width="100" height="100">
+  					<figcaption>Judy</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/JustineAquino.png" width="100" height="100">
+  					<figcaption>Justine</figcaption>
 				</figure>
         		<figure>
-  					<img src="../pics/BeccaLeviss.png" width="100" height="48">
-  					<figcaption>Edward</figcaption>
+  					<img src="../pics/LuciaDeDominics.png" width="100" height="100">
+  					<figcaption>Lucia</figcaption>
 				</figure>
         		<figure>
-  					<img src="../pics/EmilyMitrione.png" width="100" height="48">
-  					<figcaption>Frannie</figcaption>
+  					<img src="../pics/Maria Grant.png" width="100" height="100">
+  					<figcaption>Maria</figcaption>
 				</figure>
-        		<figure>
-  					<img src="../pics/LuciaDeDominics.png" width="100" height="48">
-  					<figcaption>George</figcaption>
+				<figure>
+  					<img src="../pics/Nick Meserve.png" width="100" height="100">
+  					<figcaption>Nick</figcaption>
 				</figure>
-        		<figure>
-  					<img src="../pics/JustineAquino.png" width="100" height="48">
-  					<figcaption>The Jungle</figcaption>
+				<figure>
+  					<img src="../pics/Oliver Lopez.png" width="100" height="100">
+  					<figcaption>Oliver</figcaption>
 				</figure>
+				<figure>
+  					<img src="../pics/PamelaToscano.png" width="100" height="100">
+  					<figcaption>Pamela</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/Rebecca Baron.png" width="100" height="100">
+  					<figcaption>Rebecca</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/Sidd Divakaruni.png" width="100" height="100">
+  					<figcaption>Sidd</figcaption>
+				</figure>
+				<figure>
+  					<img src="../pics/Stella Henderson.png" width="100" height="100">
+  					<figcaption>Stella</figcaption>
+				</figure>
+				</div>
         	</div>
        	</div>
        	</div>
