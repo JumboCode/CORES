@@ -2,9 +2,10 @@
   "name": "CORES",
   "version": "1.0.0",
   "description": "JumboCode 2018-2019 project for Committee on Refugees from El Salvador",
-  "main": "index.js",
+  "main": "index.php",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.php"
   },
   "repository": {
     "type": "git",
