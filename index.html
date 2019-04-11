@@ -5,6 +5,7 @@
 
 	<!-- jQuery library -->
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script 
 		type="text/javascript" 
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -13,36 +14,12 @@
 
 
 	<!-- Bootstrap -->
-	<script 
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">	
-	</script>
-	<link rel="stylesheet" 
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-	crossorigin="anonymous">
-
-<!-- CHECK OUT FOR PANEL STUFF: https://codepen.io/nhembram/pen/XKEJJp?editors=1010 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- header css and formatting -->
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- this should hold the header ? -->
-<!-- <script>
-	$(function(){
-		$("#header").load("header.html");
-	});
-	$(document).ready(function(){ 
-  		$.get("header.html", function(data) {
-	    $("#header").html(data);
-	  });
-	});
-	function LoadPage(){
-	$.get('header.html', function(data) {
-	$('#siteloader').html(data);
-	});
-	}
-</script> -->
 
 </head>
 
@@ -121,59 +98,98 @@ color: white;
 	padding-left: 0px;
 	padding-right: 0px;
 }
+.card {
+		background-color: #337ab7;
+		padding: 5%;
+    	min-height: 200px;
+}
+
+.bg-primary {
+	background-color: #d8e5ef!important;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,229,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+  border-color: rgb(204,229,255);
+} 
 
 </style>
 <body>
-	<!-- <div id="header"></div> -->
 
 <!-- header html -->
 <header>
-	<nav class ="navbar">
-	  <div class="container-fluid text-center">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class = "navbar-header">
-			<div class="navbar-brand">
-				<a href="index.html"><img src = "CORESlogo.svg" alt ="icon"></a>
-			</div>
-	    </div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-		  <ul class="nav navbar-nav mr-auto justify-content-center col-xs-6">
-	        <li class="nav-item"><a href="html/resources.html">Curriculum</a></li>
-	        <li class="nav-item"><a href="html/teaching-resources.html">Teaching Resources</a></li>
-	        <li class="nav-item"><a href="html/cores_center.html">CORES Center</a></li>
-	        <li class="nav-item"><a href="contact/formpage.html">Contact</a></li>
-	      </ul>
-		</div>
-	  </div>
-	</nav>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+<nav class="navbar navbar-expand-lg custom-toggler">
+  <a class="navbar-brand" href="index.html"><img src = "CORESlogo.svg" alt ="icon"></a> </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="html/resources.html">Curriculum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="html/teaching-resources.html">Teaching Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="html/cores_center.html"> CORES Center </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="html/contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </header>
+
 
 <!-- rest of page -->
 	<div class="container">
 		<div class="row display-flex widgets">
 			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3"> 
-				<div class="card">
-					<center><h2><b>WHO ARE WE?</b></h2></center>
-					<p>Tufts Teach-in-Cores is a group of students from Tufts University teaching ESL 
-				through the Comittee on Refugees from El Salvador in Somerville, Massachussetts.</p>
+				<div class="card h-100">
+					<center><h2><b>Who Are We?</b></h2></center>
+					<p>Tufts Teach-in-Cores is a group of students from Tufts
+					University teaching English classes 
+				through the Comittee on Refugees from El Salvador in Somerville, Massachussetts.
+					<br>
+					<br>
+					
+					CORES is an organization which offers services and supports
+					the immigrant community in Somerville. In addition to
+					providing English and Citizenship classes, CORES offers
+					financial support, legal support, and a community.
+					</p>
 				</div>
 			</div>
+
 			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3">
-				<div class="card">
-					<center><h2><b>EVENT OF THE MONTH</b></h2></center>
-					<p>Join the Teach-in-CORES teachers and students when we watch the 2017 Disney film, Coco.</p>
+				<div class="card h-100">
+					<center><h2><b>¿Quienes Somos?</b></h2></center>
+					<p>Tufts Teach-in-CORES (El Comité de Refugiados de El
+					Salvador) es un grupo de estudiantes de la Universidad de
+					Tufts que enseña clases de inglés y ciudadanía con El
+					Comité de Refugiados de El Salvador en Somerville,
+					Massachusetts.
+					<br>
+					<br>
+
+					
+					CORES es una organización que ofrece servicios y apoyo para
+					la comunidad inmigrante de Somerville. Además de clases de
+					inglés y ciudadanía, CORES ofrece ayuda financiera,
+					servicios legales, y una comunidad. </p>
 				</div>
 			</div>
 		</div>	
-		<!--
-		<div class="row display-flex widgets">
-			<div class="col-sm-11 col-xs-11 mt-2 picBack text-white text-center p-3"> 
-				<img class="img-responsive card-img-top img-marg"
-				src="../pics/longPic.png" alt="Card image">
-			</div>
-		</div>
-		-->
 
 		<div class="row display-flex widgets">
 			<div class="col-sm-5 col-xs-12 mt-2 picBack text-white text-center p-3"> 
@@ -184,15 +200,42 @@ color: white;
 				<img class="img2 img-responsive card-img-top img-marg"
 				src="pics/groupPhoto.jpg" alt="Card image">
 			</div>
+		</div>
+		<div class="row display-flex widgets">
+			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3"> 
+				<div class="card h-100">
+					<center><h2><b>Class Schedule</b></h2></center>
+					<p>
+						Our current session started on ___ and ends ___
+						<br>
+						The next session will begin on ___
+						<br>
+						<br>
+						Class Schedule:<br>
+						Monday-Friday: 6-8pm<br>
+						Saturday: 12-2pm
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3">
+				<div class="card h-100">
+					<center><h2><b>Horario De Clases</b></h2></center>
+					<p>	
+						La sesión corriente empezó ____ y terminará ____
+						<br>
+						La proxima sesión empieza ___
+						<br>
+						<br>
+						Horario de Clases: <br>
+						Lunes a Viernes: 18:00-20:00 horas<br> 
+						Sabado: 12:00-14:00 horas 
+					</p>
+				</div>
+			</div>
 		</div>	
 	</div>
 
 	<!-- calendar -->
 	<center class="mt-5"><iframe src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=tufts.cores%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></center>
-
-<!-- <script>
-includeHTML();
-</script> -->
-
 </body>
 </html>
