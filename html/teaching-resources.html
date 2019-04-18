@@ -3,30 +3,24 @@
 <head>
 	<title>Teaching Resources</title>
 
-    <!-- jQuery library -->
-    <meta charset="utf-8"/>
-    <script 
-        type="text/javascript" 
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-    <script type="text/javascript" src="script.js"></script>
+  <!-- jQuery library -->
+  <meta charset="utf-8"/>
+  <script 
+    type="text/javascript" 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="script.js"></script>
 
-
-    <!-- Bootstrap -->
-    <script 
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">  
-    </script>
-    <link rel="stylesheet" 
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-    crossorigin="anonymous">
+  <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <!-- CHECK OUT FOR PANEL STUFF: https://codepen.io/nhembram/pen/XKEJJp?editors=1010 -->
 
-    <!-- header css and formatting -->
-    <link rel="stylesheet" href="../css/stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  <!-- header css and formatting -->
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
 
 <style>
 
@@ -40,32 +34,67 @@ body {
 	padding-top: 0em;
 	padding-bottom: 0.5em;
 	border-top: 0em;
-	margin-top: 0em;
+	margin-top: 5%;
+    margin-bottom: 2%;
 }
+
+.bg-primary {
+    background-color: #d8e5ef!important;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,229,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+  border-color: rgb(204,229,255);
+} 
+
+
+.card{
+  margin-top: 5px; 
+  background-color: #337ab7;
+  color: #fff;
+}
+a {
+  color: #fff;
+} 
+.btn {
+  color: #fff;
+}
+
 </style>
 
 <body>
 <!-- header html -->
 <header>
-    <nav class ="navbar">
-      <div class="container-fluid text-center">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class = "navbar-header">
-            <div class="navbar-brand">
-                <a href="../index.html"><img src = "../CORESlogo.svg" alt ="icon"></a>
-            </div>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-          <ul class="nav navbar-nav mr-auto justify-content-center col-xs-6">
-            <li class="nav-item"><a href="resources.html">Curriculum</a></li>
-            <li class="nav-item"><a href="teaching-resources.html">Teaching Resources</a></li>
-            <li class="nav-item"><a href="cores_center.html">CORES Center</a></li>
-            <li class="nav-item"><a href="../contact/formpage.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+<nav class="navbar navbar-expand-lg custom-toggler">
+  <a class="navbar-brand" href="../index.html"><img src = "../CORESlogo.svg" alt ="icon"></a> </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="resources.html">Curriculum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="teaching-resources.html">Teaching Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cores_center.html"> CORES Center </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </header>
 
 		<div class="container">
@@ -74,27 +103,27 @@ body {
 				<p>Find comprehensive advice on CORES lesson planning! Here you can also access general reading, comprehesion practice, teaching materials, and lesson plans for ESL & citizenship.</p>
 			</div>
 
-    <div class="panel-group" id="accordion">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Introduction</a>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h4 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Introduction </button>
                 </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
                     <p>Begin the lesson by going over the learning objectives with your students, translating into Spanish when necessary.</p>
                 </div>
             </div>
 	</div>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Model Instructions and Write What You Speak</button></a>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h4 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> Model Instructions and Write What You Speak</button>
                 </h4>
             </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
                     <p>	<b>Use Modeling</b> 
 				- On the first day of class, introduce yourself to your students, and ask them to introduce themselves to you in turn. After the first day, greet students and ask them to greet you in return. Spend a few minutes going back and forth and practicing these interactions. Then, ask your students to introduce themselves to one another or greet each other. Chances are, the students will be familiar with basic introductions and greetings (if they are not, take some additional time on this exercise). However, they may have questions about the meaning of the words they use as well as questions regarding pronunciation. It is imperative that you address these questions.</p>
 
