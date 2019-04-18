@@ -3,36 +3,24 @@
 
 <head>
 	<title>CORES Center</title>
-			<!-- Latest compiled and minified CSS -->
-	<!--<link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-
 	<!-- jQuery library -->
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script 
 		type="text/javascript" 
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 	</script>
-	<script type="text/javascript" src="script.js"></script>
 
 
 	<!-- Bootstrap -->
-	<script 
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">	
-	</script>
-	<link rel="stylesheet" 
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-	crossorigin="anonymous">
-	<!-- CHECK OUT FOR PANEL STUFF: https://codepen.io/nhembram/pen/XKEJJp?editors=1010 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
 
 	<!-- google maps API -->
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-OBP1kgASiRi6zQcJKUs6iQKpZF1jjGo&callback=initMap" type="text/javascript"></script>
 
 		<!-- header css and formatting -->
 	<link rel="stylesheet" href="../css/stylesheet.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 </head>
 	<!-- styling -->
 	<style type="text/css">
@@ -172,69 +160,117 @@
 	margin-bottom: 5% !important;
 }
 
+.mb-5 {
+	margin-bottom: 2%;
+}
+
+
 .mt-2 {
 	margin-top: 2% !important;
 }
+
+.card {
+		background-color: #337ab7;
+		padding: 2%;
+    	min-height: 200px;
+}
+
+.bg-primary {
+	background-color: #d8e5ef!important;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,229,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+  border-color: rgb(204,229,255);
+} 
 
 </style>
 
 	
 <body>
-
 	<!-- header html -->
-<header>
-	<nav class ="navbar">
-	  <div class="container-fluid text-center">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class = "navbar-header">
-			<div class="navbar-brand">
-				<a href="../index.html"><img src = "../CORESlogo.svg" alt ="icon"></a>
-			</div>
-	    </div>
+	<header>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-		  <ul class="nav navbar-nav mr-auto justify-content-center col-xs-6">
-	        <li class="nav-item"><a href="resources.html">Curriculum</a></li>
-	        <li class="nav-item"><a href="teaching-resources.html">Teaching Resources</a></li>
-	        <li class="nav-item"><a href="cores_center.html">CORES Center</a></li>
-	        <li class="nav-item"><a href="../contact/formpage.html">Contact</a></li>
-	      </ul>
-		</div>
-	</nav>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+<nav class="navbar navbar-expand-lg custom-toggler">
+  <a class="navbar-brand" href="../index.html"><img src = "../CORESlogo.svg" alt ="icon"></a> </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="resources.html">Curriculum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="teaching-resources.html">Teaching Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cores_center.html"> CORES Center </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../contact/formpage.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </header>
+
+
 
 		<div class="container">
 
-		<div class ="jumbotron center">
+		<div class ="jumbotron center mt-5 mb-2">
 		<h2>CORES Center</h2>
 
-		<p> Led by Salvadorans with a strong commitment to the leadership, development, and empowerment of their community, the CORES (Committee on Refugees from El Salvador) Center is located at 343 Medford Street, Somerville, MA 02145. The center is open Monday - Friday 9am - 5pm and Saturday 10am - 3pm. </p>
+		<p> Led by Salvadorans with a strong commitment to the leadership,
+		development, and empowerment of their community, the CORES (Committee
+		on Refugees from El Salvador)</p>
 		<p>
 		El Centro de Refugiados de El Salvador fue organizado por Salvadoreños con un fuerte compromiso al liderazgo, desarrollo, y empoderamiento.
 		</p>
 		</div>
-		
-		<div class ="jumbotron center">
-		<h2>Location/Ubicación</h2>
-		<p>
-		343 Medford St.<br>
-		Suite 3B<br>
-		Somerville, MA 02145<br>
-		Tel.: (617) 623-5322<br>
-		</p>
-			
-		<br>
-		<h2>Hours/Horas</h2>
-		<p>
-		Monday - Friday 9am - 5pm <br>
-		Saturday 10am - 3pm<br>
-		<br>
-		Lunes a Viernes a los 9:00-17:00 <br>
-		Los Sábados 10:00-15:00<br>
-		</p>
-		</div>
+		<div class="container">
+		<div class="row display-flex widgets">
+			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3">
+				<div class="card h-100">
+					<h2>Location | Ubicación</h2>
+					343 Medford St.<br>
+					Suite 3B<br>
+					Somerville, MA 02145<br>
+					Tel.: (617) 623-5322<br><br>
 
-		<div class="row display-flex widgets mb-5">
+					<h2>Hours | Horas</h2>
+					<p>
+					Monday - Friday 9am - 5pm <br>
+					Saturday 10am - 3pm<br>
+					<br>
+					Lunes a Viernes a los 9:00-17:00 <br>
+					Los Sábados 10:00-15:00<br>
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3"> 
+				<div class="card card-cascade narrower h-100">
+					  <div class="card-body card-body-cascade text-center">
+						<h2>Map | Mapa</h2>
+						<div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+							<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa_-6wNJw44kRLtgbsuv2qms&key=AIzaSyC-OBP1kgASiRi6zQcJKUs6iQKpZF1jjGo" allowfullscreen></iframe>
+						</div>
+					  </div>
+				</div>
+			</div>
+		</div>	
+
+
+		
+		<div class="row display-flex widgets mb-2">
 			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3">
 				<img class="img1 img-responsive card-img-top img-marg"
 				src="../pics/IMG_6685.JPG" alt="Card image">
@@ -244,9 +280,33 @@
 				src="../pics/IMG_6767.JPG" alt="Card image">
 			</div>
 		</div>
-		<br>
 
 		<div class="row display-flex widgets">
+			<div class="col-sm-5 col-xs-12 mb-2 bg-primary text-white text-center p-3"> 
+				<div class="card h-100">
+					<center><h2><b>Class Schedule</b></h2></center>
+					<p>
+						Monday-Friday: 6-8pm<br>
+						Saturday: 12-2pm
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-5 col-xs-12 mb-2 bg-primary text-white text-center p-3">
+				<div class="card h-100">
+					<center><h2><b>Horario De Clases</b></h2></center>
+					<p>	
+						Lunes a Viernes: 18:00-20:00 horas<br> 
+						Sabado: 12:00-14:00 horas 
+					</p>
+				</div>
+			</div>
+		</div>	
+
+		<br>
+
+
+
+	<div class="row display-flex widgets">
         <div class = "title col-sm-11"> 
         	<h3> CORES Teachers </h3>
         	<div class = "teachers">
@@ -365,12 +425,6 @@
         	</div>
        	</div>
 
-      	</div>
- <div class = "map">
-        	<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa_-6wNJw44kRLtgbsuv2qms&key=AIzaSyC-OBP1kgASiRi6zQcJKUs6iQKpZF1jjGo" allowfullscreen></iframe>
-        </div>
-
-        
 	</div>
 </div>
 	</body>
