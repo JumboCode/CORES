@@ -9,7 +9,6 @@
     type="text/javascript" 
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   </script>
-  <script type="text/javascript" src="script.js"></script>
 
   <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -49,6 +48,13 @@ body {
   border-color: rgb(204,229,255);
 } 
 
+.mt-5 {
+	margin-top: 5%;
+}
+
+.mb-5 {
+	margin-bottom: 5%;
+}
 
 .card{
   margin-top: 5px; 
@@ -90,7 +96,7 @@ a {
         <a class="nav-link" href="cores_center.html"> CORES Center </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="../contact/formpage.html">Contact</a>
       </li>
     </ul>
   </div>
@@ -103,6 +109,7 @@ a {
 				<p>Find comprehensive advice on CORES lesson planning! Here you can also access general reading, comprehesion practice, teaching materials, and lesson plans for ESL & citizenship.</p>
 			</div>
 
+	<div class="container">
     <div id="accordion">
         <div class="card">
             <div class="card-header" id="headingOne">
@@ -133,73 +140,88 @@ a {
                 </div>
             </div>
     	</div>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Teach Vocabulary</a>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h4 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse"
+						data-target="#collapseThree" aria-expanded="true"
+						aria-controls="collapseThree"> Teach Vocabulary</button>
                 </h4>
             </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseThree" class="collapse"
+				aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
                     <p>It is difficult if not impossible to really "teach" students vocabulary. It is important to introduce new words to them and
   				to provide them with helpful associations that will aid them in the process of memorization. As teachers, we can also use class time to increase their exposure to new words through creating activities and games to be completed together. However, it must be stressed to them that completion of homework is necessary to success.</p>
                 </div>
             </div>
     	</div>
-            <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Verb Conjugation Chart</a>
+            <div class="card">
+            <div class="card-header" id="headingFour">
+                <h4 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse"
+						data-target="#collapseFour" aria-expanded="true"
+						aria-controls="collapseFour">Verb Conjugation Chart</button>
                 </h4>
             </div>
-            <div id="collapseFour" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseFour" class="collapse"
+				aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
                     <p>These charts will be an essential part of language learning. You will complete charts in class and students will be asked to complete them for homework. It is important that you drill correct conjugation into your students' minds and then assess student progress with exercises and games.</p>
                 </div>
             </div>
-   	</div>
-             <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Follow Up Review</a>
+			</div>
+            <div class="card">
+            <div class="card-header" id="headingFive">
+                <h4 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse"
+						data-target="#collapseFive" aria-expanded="true"
+						aria-controls="collapseFive">Follow Up Review</button>
                 </h4>
             </div>
-            <div id="collapseFive" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseFive" class="collapse"
+				aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
                     <p>Because of the patchy nature of student attendance and the nature of our program, there will be a lot of review and even 
 				re-teaching each week. However, having a standardized system will allow us to do the best that we can in circumstances that are less than ideal...</p>
                 </div>
             </div>
     	</div>
     </div>
+    </div>
 		
-    <div class="panel-group" id="accordion">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-						href="#collapseSix">Transportation to Center</a>
+	<div class="container mt-5 mb-5">
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h4 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse"
+						data-target="#collapseSix" aria-expanded="true"
+						aria-controls="collapseSix">Transportation to Center</button>
                 </h4>
             </div>
-            <div id="collapseSix" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseSix" class="collapse"
+				aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body">
 				<p>Center address- 343 Medford St. Suite 3B Somerville, MA 02145<br>
 				Bus route: From Tufts University take the 80 towards Lechmere from
 				Dowling Garage, and get off at Medford St @ School St. 
 				</p>
                 </div>
             </div>
-	</div>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-						href="#collapseSeven">Reimbursement Form</button></a>
+		</div>
+        <div class="card">
+            <div class="card-header" id="headingSeven">
+                <h4 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse"
+						data-target="#collapseSeven" aria-expanded="true"
+						aria-controls="collapseSeven">Reimbursement Form</button>
                 </h4>
             </div>
 					
-			<div id="collapseSeven" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseSeven" class="collapse"
+				aria-labelledby="headingSeven" data-parent="#accordion">
+                <div class="card-body">
 					<a href="../CORES files/GeneralReimbursementForm.pdf"
 					class=pdf target="_blank">General Reimbursement Form</a>
 					<p>Info that needs to be filled out:</p>
@@ -208,18 +230,20 @@ a {
 							Phone, Email</li>
 						<li>Attach copies of the Uber/Lyft Receipts </li>
 					</ul>
-					</div>
+				</div>
             </div>
     	</div>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-						href="#collapseEight">External Resources</a>
+        <div class="card">
+            <div class="card-header" id="headingEight">
+                <h4 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse"
+						data-target="#collapseEight" aria-expanded="true"
+						aria-controls="collapseEight">External Resources</button>
                 </h4>
             </div>
-            <div id="collapseEight" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseEight" class="collapse"
+				aria-labelledby="headingEight" data-parent="#accordion">
+                <div class="card-body">
 					<a href="https://www.teachingchannel.org/video/classroom-lesson-starters"
 		class=pdf target="_blank">Lesson Starters</a><br>
 					<a
@@ -238,9 +262,7 @@ a {
             </div>
     	</div>
     </div>
-		
-
-
+    </div>
 </div>
 
 </body>
