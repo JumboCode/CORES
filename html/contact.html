@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>CORES Center</title>
+	<!-- jQuery library -->
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script 
+		type="text/javascript" 
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+
+	<!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+
+	<!-- google maps API -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-OBP1kgASiRi6zQcJKUs6iQKpZF1jjGo&callback=initMap" type="text/javascript"></script>
+
+		<!-- header css and formatting -->
+	<link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+	<!-- styling -->
+	<style type="text/css">
+
+	.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  
+  .card {
+    display: inline-block;
+  }
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  
+  .card {
+    flex: 0 0 auto;
+    margin-right: 3px;
+  }
+}
+
+.scrolling-wrapper, .scrolling-wrapper-flexbox {
+  height: 160px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+	figure {
+	    display: inline-block;
+	    margin: 1%; /* adjust as needed */
+	}
+
+	figure img {
+		border-radius: 50%;
+	    vertical-align: top;
+	}
+
+	figure figcaption {
+    text-align: center;
+    color: white;
+
+	}
+	
+	h1 {
+		font-weight: bold;
+	}
+
+	h3 {
+		color: #d8e5ef;
+	}
+
+	.title {
+		background-color: #1D2746;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		padding-left: 2%;
+		padding-right: 2%;
+
+	}
+
+	.Page {
+		margin-top: 3%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+
+	.map {
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.pic {
+		margin: 2%;
+		text-align: center;
+	}
+
+	body {
+	font-family: Avenir;
+	background-color: #d8e5ef;
+	}
+
+	.jumbotron {
+		background-color:transparent !important;
+		padding-top: 0em;
+		padding-bottom: 0.5em;
+		border-top: 0em;
+		margin-top: 0em;
+	}
+
+.col-sm-5 {
+	margin-left:2%;
+	margin-right:2%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.widgets {
+	display: flex;
+    justify-content: space-around;
+}
+
+.img1 {
+	flex: 1.095;
+}
+
+.img2 {
+	flex: 0.75;
+}
+
+.img2 {
+
+}
+
+.bg-primary {
+	background-color: #d8e5ef;
+}
+
+.mb-5 {
+	margin-bottom: 5% !important;
+}
+
+.mb-5 {
+	margin-bottom: 2%;
+}
+
+
+.mt-2 {
+	margin-top: 2% !important;
+}
+
+.card {
+		background-color: #337ab7;
+		padding: 2%;
+    	min-height: 200px;
+}
+
+.bg-primary {
+	background-color: #d8e5ef!important;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,229,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+  border-color: rgb(204,229,255);
+} 
+
+</style>
+
+	
+<body>
+	<!-- header html -->
+	<header>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+<nav class="navbar navbar-expand-lg custom-toggler">
+  <a class="navbar-brand" href="../index.html"><img src = "../CORESlogo.svg" alt ="icon"></a> </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="resources.html">Curriculum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="teaching-resources.html">Teaching Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cores_center.html"> CORES Center </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../contact/formpage.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+
+
+		<div class="container">
+
+<!--        <div class ="jumbotron center mt-5 mb-2">-->
+<!--        <h2>Contact</h2>-->
+
+
+<!--        </div>-->
+		<div class="container">
+		<div class="row display-flex widgets">
+			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3">
+				<div class="card h-100">
+                    <p></p>
+                    <h4>To Contact Teach-in-Cores |</h4>
+                    <h4>Para Contactar Teach-in-Cores</h4>
+                    <p></p>
+                    Email: Tufts.CORES@gmail.com
+                    
+				</div>
+			</div>
+			<div class="col-sm-5 col-xs-12 mt-2 bg-primary text-white text-center p-3"> 
+				<div class="card card-cascade narrower h-100">
+					  <div class="card-body card-body-cascade text-center">
+                          <h4>To Contact the CORES Center | Para Contactar El Centro de CORES</h4>
+      <p></p>
+                          343 Medford St.<br>
+                          Suite 3B<br>
+                          Somerville, MA 02145<br>
+                          Tel.: (617) 623-5322<br><br>
+                          
+                          <h4>Hours | Horas</h4>
+                          <p>
+                          Monday - Friday 9am - 5pm <br>
+                          Saturday 10am - 3pm<br>
+                          <br>
+                          Lunes a Viernes a los 9:00-17:00 <br>
+                          Los Sábados 10:00-15:00<br>
+                          </p>
+						
+					  </div>
+				</div>
+			</div>
+		</div>	
+
+
+		
+		<div class="row display-flex widgets mb-2">
+			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3">
+				<img class="img1 img-responsive card-img-top img-marg"
+				src="../pics/IMG_6681.JPG" alt="Card image">
+			</div>
+			<div class="col-sm-5 mt-2 bg-primary text-white text-center p-3">
+                <div id="map-container-google-8" class="img2 img-responsive card-img-top img-marg" style="height: 400px">
+                    <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa_-6wNJw44kRLtgbsuv2qms&key=AIzaSyC-OBP1kgASiRi6zQcJKUs6iQKpZF1jjGo" allowfullscreen></iframe>
+                </div>
+			</div>
+		</div>
+
+
+
+		<br>
+
+
+
+</div>
+	</body>
+</html>
